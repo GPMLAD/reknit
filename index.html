@@ -68,13 +68,13 @@
 
       <section>
         <h2>Combate</h2>
-        <p>Classe de Armadura (CA): Reknit</p>
-        <p>Iniciativa: Reknit</p>
-        <p>Deslocamento: Reknit</p>
-        <p>PV Máximos: Reknit</p>
-        <p>PV Atuais: Reknit</p>
-        <p>PV Temporário: Reknit</p>
-        <p>Dados de Vida: Reknit</p>
+        <p>Classe de Armadura (CA): 14 + 2 (DEX)</p>
+        <p>Iniciativa: +2</p>
+        <p>Deslocamento: 9m</p>
+        <p>PV Máximos: 8</p>
+        <p>PV Atuais: 8</p>
+        <p>PV Temporário: 0</p>
+        <p>Dados de Vida: 1d8</p>
       </section>
 
       <section>
@@ -267,14 +267,14 @@
           <li>
             Truques: 2
             <ul>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
+              <li><a href="#consertar">Consertar</a></li>
+              <li><a href="#golpeTrovejante">Golpe Trovejante</a></li>
             </ul>
           </li>
           <li>
             1º Nível: 2
             <ul>
-              <li>nenhuma</li>
+              <li><a href="#absorverElementos">Absorver Elementos</a></li>
               <li>nenhuma</li>
             </ul>
           </li>
@@ -402,7 +402,7 @@
       <section>
         <h2>CODEX</h2>
 
-        <h3>Lista de magias conhecidas</h3>
+        <h3 id="magiasConhecidas">Lista de magias conhecidas</h3>
 
         <h4>Habilidades de Classe</h4>
         <ul>
@@ -444,7 +444,7 @@
         <h4>Truques</h4>
         <ul>
           <li>
-            <h5>Consertar</h5>
+            <h5 id="consertar">Consertar</h5>
             <p>Trasmutação - 1min - Toque - V,S,M - Instantânea</p>
             <p>
               Essa magia repara um única quebra ou fissura em um objeto que você
@@ -459,9 +459,119 @@
               mas a magia não irá restaurar a magia em tais objetos.
             </p>
           </li>
-          <li></li>
+          <li>
+            <h5 id="golpeTrovejante">Golpe Trovejante</h5>
+            <p>Evocação - 1 ação - Pessoal - S - Instantânea</p>
+            <p>
+              Você cria uma violenta explosão sonora, que pode ser ouvida a até
+              30 metros de distância. Cada criatura diferente de você a até 1,5
+              metros de você deve realizar um teste de resistência de
+              Constituição. Se falhar na resistência, o alvo sofre 1d6 de dano
+              trovejante.
+            </p>
+            <p>
+              O dano da magia aumenta em 1d6 quando você alcança o 5º nível
+              (2d6), 11º nível (3d6) e 17º nível (4d6).
+            </p>
+          </li>
         </ul>
         <h4>Nível 1</h4>
+        <ul>
+          <li>
+            <h5 id="absorverElementos">Absorver Elementos</h5>
+            <p>
+              Abjuração - 1 reação ao sofrer dano (ácido, frio, fogo, elétrico
+              ou trovejante) - Pessoal - S - 1 rodada
+            </p>
+            <p>
+              A magia reverte parte da energia recebida, minimizando seu efeito
+              em você e armazenando-a no seu próximo ataque corpo-a-corpo. Você
+              tem resistência ao tipo de dano pertinente , incluindo do ataque
+              que desencadeou a magia, até o início do seu próximo turno. Além
+              disso, da primeira vez que você atingir um ataque corpo- a-corpo
+              no seu próximo turno, o alvo sofre 1d6 de dano extra do tipo
+              relacionado e a magia termina.
+            </p>
+            <p>
+              Em Níveis Superiores. Quando você conjura essa magia usando um
+              espaço de magia de 2º nível ou superior, o dano extra aumenta em
+              1d6 para cada nível do espaço acima do 1º.
+            </p>
+          </li>
+          <li>
+            <h5 id="areaEscorregadia">Área Escorregadia</h5>
+            <p>Conjuração - 1 ação - 18m - V,S,M - 1min</p>
+            <p>
+              Graxa escorregadia cobre o solo em um quadrado de 3 metros
+              centrado em um ponto, dentro do alcance, tornando essa área em
+              terreno difícil pela duração.
+            </p>
+            <p>
+              Quando a graxa aparece, cada criatura de pé na área deve ser bem
+              sucedida num teste de resistência de Destreza ou cairá no chão.
+              Uma criatura que entre na área ou termine seu turno nela, deve ser
+              bem sucedido num teste de resistência de Destreza ou cairá no
+              chão.
+            </p>
+          </li>
+          <li>
+            <h5 id="detectarMagia">Detectar Magia</h5>
+            <p>
+              Adivinhação (ritual) - 1 ação - Pessoal - V,S - Concentração, até
+              10min
+            </p>
+            <p>
+              Pela duração, você sente a presença de magia a até 9 metros de
+              você. Se você sentir magia dessa forma, você pode usar sua ação
+              para ver uma aura suave em volta de qualquer criatura ou objeto
+              visível, na área que carrega magia, e você descobre a escolha de
+              magia, se houver uma.
+            </p>
+            <p>
+              A magia pode penetrar a maioria das barreiras, mas é bloqueada por
+              30 centímetros de rocha, 2,5 centímetros de metal comum, uma fina
+              camada de chumbo, ou 90 centímetros de madeira ou terra.
+            </p>
+          </li>
+          <li>
+            <h5 id="fogoDasFadas">Fogo das Fadas</h5>
+            <p>Evocação - 1 ação - 18m - V - Concentração, até 1min</p>
+            <p>
+              Cada objeto num cubo de 6 metros dentro do alcance fica delineado
+              com luz azul, verde ou violeta (à sua escolha). Qualquer criatura
+              na área, quando a magia é conjurada, também fica delineada com
+              luz, se falhar num teste de resistência de Destreza. Pela duração,
+              os objetos e criaturas afetadas emitem penumbra num raio de 3
+              metros.
+            </p>
+            <p>
+              Qualquer jogada de ataque contra uma criatura afetada ou objeto
+              tem vantagem, se o atacante puder ver o alvo e, a criatura afetada
+              ou objeto não recebe benefício por estar invisível.
+            </p>
+          </li>
+          <li>
+            <h5 id="identificacao">Identificação</h5>
+            <p>
+              Adivinhação (ritual) - 1 minuto - Toque - V,S,M (pérola valendo
+              10000 PO) - Concentração, até 10min
+            </p>
+            <p>
+              Você escolhe um objeto que você deve tocar durante toda a
+              conjuração da magia. Se ele for um item mágico ou algum outro
+              objeto imbuído por magia, você descobre suas propriedades e como
+              usá-lo, se exige sintonia para ser usado e quantas cargas ele tem,
+              se aplicável. Você descobre se quaisquer magias estão afetando o
+              item e quais eles são. Se o item foi criado por magia, você
+              descobre que magia o criou.
+            </p>
+            <p>
+              Se você, ao invés, tocar uma criatura durante toda a conjuração,
+              você descobre quais magias, se houver alguma, estão afetando-a
+              atualmente.
+            </p>
+          </li>
+        </ul>
       </section>
 
       <section>
