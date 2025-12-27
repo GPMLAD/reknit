@@ -8,12 +8,17 @@
   </head>
   <body>
     <main>
-      <h2>Informações Básicas</h2>
-      <p>Nome do Personagem: Reknit</p>
-      <p>Classe & Nível: Artífice 1</p>
-      <p>Raça: Humano</p>
-      <p>Antecedente: Artesão da guilda</p>
-      <p>Alinhamento: Neutro</p>
+      <header>
+        <h1>Reknit</h1>
+        <p>
+          <strong>Classe & Nível:</strong> Artífice 1 |
+          <strong>Raça:</strong> Humano
+        </p>
+        <p>
+          <strong>Antecedente:</strong> Artesão da guilda |
+          <strong>Alinhamento:</strong> Neutro
+        </p>
+      </header>
 
       <h2>Atributos</h2>
       <h3>Proficiência: +2</h3>
@@ -43,13 +48,13 @@
             <td>Constituição</td>
             <td>14+1</td>
             <td>+2</td>
-            <td>Sim</td>
+            <td><strong>Sim</strong></td>
           </tr>
           <tr>
             <td>Inteligência</td>
             <td>15+1</td>
             <td>+3</td>
-            <td>Sim</td>
+            <td><strong>Sim</strong></td>
           </tr>
           <tr>
             <td>Sabedoria</td>
@@ -68,13 +73,14 @@
 
       <section>
         <h2>Combate</h2>
-        <p>Classe de Armadura (CA): 14 + 2 (DEX)</p>
-        <p>Iniciativa: +2</p>
-        <p>Deslocamento: 9m</p>
-        <p>PV Máximos: 8</p>
-        <p>PV Atuais: 8</p>
-        <p>PV Temporário: 0</p>
-        <p>Dados de Vida: 1d8</p>
+        <div class="combat-info">
+          <span><strong>CA:</strong> 14 + 2 (DEX)</span> |
+          <span><strong>Iniciativa:</strong> +2</span> |
+          <span><strong>Deslocamento:</strong> 9m</span> |
+          <span><strong>PV Máx:</strong> 8</span> |
+          <span><strong>PV Atual:</strong> 8</span> |
+          <span><strong>Dados de Vida:</strong> 1d8</span>
+        </div>
       </section>
 
       <section>
@@ -113,96 +119,98 @@
 
       <section>
         <h2>Perícias</h2>
-        <div>
-          <input type="checkbox" name="skills" id="acrobacia" />
-          <label for="acrobacia">Acrobacia (DEX)</label>
-        </div>
+        <div class="skills-container">
+          <div>
+            <input type="checkbox" name="skills" id="acrobacia" />
+            <label for="acrobacia">Acrobacia (DEX)</label>
+          </div>
 
-        <div>
-          <input type="checkbox" name="skills" id="arcanismo" checked />
-          <label for="arcanismo">Arcanismo (INT)</label>
-        </div>
+          <div>
+            <input type="checkbox" name="skills" id="arcanismo" checked />
+            <label for="arcanismo">Arcanismo (INT)</label>
+          </div>
 
-        <div>
-          <input type="checkbox" name="skills" id="atletismo" />
-          <label for="atletismo">Atletismo (STR)</label>
-        </div>
+          <div>
+            <input type="checkbox" name="skills" id="atletismo" />
+            <label for="atletismo">Atletismo (STR)</label>
+          </div>
 
-        <div>
-          <input type="checkbox" name="skills" id="atuacao" />
-          <label for="atuacao">Atuação (CHA)</label>
-        </div>
+          <div>
+            <input type="checkbox" name="skills" id="atuacao" />
+            <label for="atuacao">Atuação (CHA)</label>
+          </div>
 
-        <div>
-          <input type="checkbox" name="skills" id="blefar" />
-          <label for="blefar">Blefar (CHA)</label>
-        </div>
+          <div>
+            <input type="checkbox" name="skills" id="blefar" />
+            <label for="blefar">Blefar (CHA)</label>
+          </div>
 
-        <div>
-          <input type="checkbox" name="skills" id="furtividade" />
-          <label for="furtividade">Furtividade (DEX)</label>
-        </div>
+          <div>
+            <input type="checkbox" name="skills" id="furtividade" />
+            <label for="furtividade">Furtividade (DEX)</label>
+          </div>
 
-        <div>
-          <input type="checkbox" name="skills" id="historia" />
-          <label for="historia">História (INT)</label>
-        </div>
+          <div>
+            <input type="checkbox" name="skills" id="historia" />
+            <label for="historia">História (INT)</label>
+          </div>
 
-        <div>
-          <input type="checkbox" name="skills" id="intimidacao" />
-          <label for="intimidacao">Intimidação (CHA)</label>
-        </div>
+          <div>
+            <input type="checkbox" name="skills" id="intimidacao" />
+            <label for="intimidacao">Intimidação (CHA)</label>
+          </div>
 
-        <div>
-          <input type="checkbox" name="skills" id="intuicao" />
-          <label for="intuicao">Intuição (WIS)</label>
-        </div>
+          <div>
+            <input type="checkbox" name="skills" id="intuicao" />
+            <label for="intuicao">Intuição (WIS)</label>
+          </div>
 
-        <div>
-          <input type="checkbox" name="skills" id="investigacao" checked />
-          <label for="investigacao">Investigação (INT)</label>
-        </div>
+          <div>
+            <input type="checkbox" name="skills" id="investigacao" checked />
+            <label for="investigacao">Investigação (INT)</label>
+          </div>
 
-        <div>
-          <input type="checkbox" name="skills" id="lidarComAnimais" />
-          <label for="lidarComAnimais">Lidar com animais (WIS)</label>
-        </div>
+          <div>
+            <input type="checkbox" name="skills" id="lidarComAnimais" />
+            <label for="lidarComAnimais">Lidar com animais (WIS)</label>
+          </div>
 
-        <div>
-          <input type="checkbox" name="skills" id="medicina" />
-          <label for="medicina">Medicina (WIS)</label>
-        </div>
+          <div>
+            <input type="checkbox" name="skills" id="medicina" />
+            <label for="medicina">Medicina (WIS)</label>
+          </div>
 
-        <div>
-          <input type="checkbox" name="skills" id="natureza" />
-          <label for="natureza">Natureza (INT)</label>
-        </div>
+          <div>
+            <input type="checkbox" name="skills" id="natureza" />
+            <label for="natureza">Natureza (INT)</label>
+          </div>
 
-        <div>
-          <input type="checkbox" name="skills" id="percepcao" />
-          <label for="percepcao">Percepção (WIS)</label>
-        </div>
+          <div>
+            <input type="checkbox" name="skills" id="percepcao" />
+            <label for="percepcao">Percepção (WIS)</label>
+          </div>
 
-        <div>
-          <input type="checkbox" name="skills" id="persuasao" />
-          <label for="persuasao">Persuasão (CHA)</label>
-        </div>
+          <div>
+            <input type="checkbox" name="skills" id="persuasao" />
+            <label for="persuasao">Persuasão (CHA)</label>
+          </div>
 
-        <div>
-          <input type="checkbox" name="skills" id="prestidigitacao" />
-          <label for="prestidigitacao">Prestidigitação (DEX)</label>
-        </div>
+          <div>
+            <input type="checkbox" name="skills" id="prestidigitacao" />
+            <label for="prestidigitacao">Prestidigitação (DEX)</label>
+          </div>
 
-        <div>
-          <input type="checkbox" name="skills" id="religiao" />
+          <div>
+            <input type="checkbox" name="skills" id="religiao" />
 
-          <label for="religiao">Religião (INT)</label>
-        </div>
+            <label for="religiao">Religião (INT)</label>
+          </div>
 
-        <div>
-          <input type="checkbox" name="skills" id="sobrevivencia" />
+          <div>
+            <input type="checkbox" name="skills" id="sobrevivencia" />
 
-          <label for="sobrevivencia">Sobrevivência (WIS)</label>
+            <label for="sobrevivencia">Sobrevivência (WIS)</label>
+          </div>
         </div>
       </section>
 
